@@ -222,3 +222,15 @@ body {
 .copyright-author {
 	font-weight: 600;
 }
+
+/* responsive */
+@media (max-width: 414px) {
+	.profile-main__desc .col {
+		width: 100%;
+		align-items: center;
+	}
+
+	.profile-main__desc-text {
+		margin-bottom: 5px;
+	}
+}
