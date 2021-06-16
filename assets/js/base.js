@@ -1,5 +1,5 @@
 
-const DOMAIN_NAME = 'https://kiennt.tk/'
+const DOMAIN_NAME = 'https://kiennt.tk/validator-library.github.io/'
 
 const PROVINCES = [
 	{
