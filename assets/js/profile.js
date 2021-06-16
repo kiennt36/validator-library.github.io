@@ -12,6 +12,8 @@ const favorites = FAVORITES.reduce((result, item) => {
 
 if(profileElement) {
 	const dataUser = JSON.parse(localStorage.getItem('dataUser'))
+	if(!dataUser) window.location = DOMAIN_NAME + 'index.html'
+	
 	const newFavorites = dataUser.favorite.reduce((list, value, index) => {
 		list[index] = favorites[value]
 		return list

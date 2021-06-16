@@ -22,12 +22,12 @@ Validator({
 	rules: [
 		Validator.isRequired('#email', 'Vui lòng nhập email'),
 		Validator.isConfirmed('#email', () => {
-			const emailDataUser = JSON.parse(localStorage.getItem('dataUser')).email || {}
+			const emailDataUser = JSON.parse(localStorage.getItem('dataUser')).email || 'admin@gmail.com'
 			return emailDataUser
 		}, "Email nhập vào không đúng"),
 		Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
 		Validator.isConfirmed('#password', () => {
-			const pwDataUser = JSON.parse(localStorage.getItem('dataUser')).password || {}
+			const pwDataUser = JSON.parse(localStorage.getItem('dataUser')).password || 'admin123456'
 			return pwDataUser
 		}, "Mật khẩu nhập không đúng"),
 	],
