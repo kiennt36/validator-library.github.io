@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Page</title>
+	<link rel="icon" type="image/png" href="./assets/img/logo.png"/>
+	<link rel="icon" type="image/png" href="./assets/img/logo.png"/>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<section class="form-section">
+			<div class="form-section__header">
+				<h2 class="form-section__heading">
+					Đăng ký thành viên
+				</h2>
+
+				<span class="form-section__sub-heading">
+					F8 là cộng đồng học lập trình thực tế miễn phí. Đăng nhập để cùng nhau học tập, đóng góp và chia sẻ kiến thức
+					<span class="form-section__sub-heading-icon">❤️</span>
+				</span>
+			</div>
+
+			<div class="form-section__body">
+				<form  id="form-register" class="form-section__form" action="">
+					<div class="form-section__form-group">
+						<label for="fullName" class="form-section__form-label">
+							Họ và tên
+						</label>
+						<div class="form-section__form-input-wrap">
+							<input id="fullName" class="form-section__form-input" name="fullName" type="text" placeholder="VD: Kien Trung Ngo">
+							<span class="form-section__form-error-icon">
+								<svg class="Input_icon__1WC0H" width="16" height="16" viewBox="0 0 16 16"><path d="M0 0h16v16H0V0z" fill="none"></path><path d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z" fill="#f33a58"></path></svg>
+							</span>
+						</div>
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+					</div>
+					<div class="form-section__form-group">
+						<label for="email" class="form-section__form-label">
+							Email
+						</label>
+						<div class="form-section__form-input-wrap">
+							<input id="email" name="email" class="form-section__form-input" type="text" placeholder="VD: kientrungngo123@gmail.com">
+							<span class="form-section__form-error-icon">
+								<svg class="Input_icon__1WC0H" width="16" height="16" viewBox="0 0 16 16"><path d="M0 0h16v16H0V0z" fill="none"></path><path d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z" fill="#f33a58"></path></svg>
+							</span>
+						</div>
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+					</div>
+					<div class="form-section__form-group">
+						<label for="password" class="form-section__form-label">
+							Mật khẩu
+						</label>
+						<div class="form-section__form-input-wrap">
+							<input id="password" class="form-section__form-input" name="password" type="password" placeholder="Nhập mật khẩu">
+							<span class="form-section__form-group-icon hidden">
+								<i class="fas fa-eye"></i>
+								<i class="fas fa-eye-slash"></i>
+							</span>
+						</div>
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+
+						<ul class="form-section__form-checkList hidden">
+							<li class="form-section__form-checkItem">
+								<span class="form-section__form-checkItem-icon">
+									<i class="fas fa-times-circle"></i>
+									<i class="fas fa-check-circle"></i>
+								</span>
+								Sử dụng ít nhất 8 ký tự
+							</li>
+							<li class="form-section__form-checkItem">
+								<span class="form-section__form-checkItem-icon">
+									<i class="fas fa-times-circle"></i>
+									<i class="fas fa-check-circle"></i>
+								</span>
+								Bao gồm ít nhất 1 chữ cái
+							</li>
+							<li class="form-section__form-checkItem">
+								<span class="form-section__form-checkItem-icon">
+									<i class="fas fa-times-circle"></i>
+									<i class="fas fa-check-circle"></i>
+								</span>
+								Sử dụng ít nhất một số hoặc một ký tự đặc biệt
+							</li>
+							
+						</ul>
+					</div>
+					<div class="form-section__form-group">
+						<label for="password-confirmation" class="form-section__form-label">
+							Nhập lại mật khẩu
+						</label>
+						<div class="form-section__form-input-wrap">
+							<input id="password-confirmation" class="form-section__form-input" name="password-confirmation" type="password" placeholder="Nhập lại mật khẩu">
+							<span class="form-section__form-group-icon hidden">
+								<i class="fas fa-eye"></i>
+								<i class="fas fa-eye-slash"></i>
+							</span>
+						</div>
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+					</div>
+					<div class="form-section__form-group">
+						<label class="form-section__form-label">
+							Tỉnh/Tp
+						</label>
+						<div class="form-section__form-input-wrap">
+							<select name="province" id="province" class="form-section__form-input">
+								<option value="">
+									-- Tỉnh/Tp --
+								</option>
+							</select>
+						</div>
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+					</div>
+					<div class="form-section__form-group">
+						<label for="avatar" class="form-section__form-label">
+							Avatar
+						</label>
+						<div class="form-section__form-input-wrap">
+							<input id="avatar" name="avatar" type="file" class="form-section__form-input">
+						</div>
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+						<div class="form-section__form-show-img hidden">
+							<!-- <img class="form-section__form-img" src="" alt=""> -->
+						</div>
+					</div>
+					<div class="form-section__form-group">
+						<label class="form-section__form-label">
+							Giới tính
+						</label>
+						<div class="form-section__form-input-wrap mt-1">
+							<input type="radio" name="gender" value="male">
+							<label for="" class="form-section__form-label">
+								Nam
+							</label>
+						</div>
+						<div class="form-section__form-input-wrap mt-1">
+							<input type="radio" name="gender" value="female">
+							<label for="" class="form-section__form-label">
+								Nữ
+							</label>
+						</div>
+						<div class="form-section__form-input-wrap mt-1">
+							<input type="radio" name="gender" value="orther">
+							<label for="" class="form-section__form-label">
+								Khác
+							</label>
+						</div>
+						
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+					</div>
+					<div class="form-section__form-group">
+						<label class="form-section__form-label">
+							Sở thích
+						</label>
+						<div class="form-section__favorite-list">
+						</div>
+
+						<span class="form-section__form-message">
+							Vui lòng nhập trường này
+						</span>
+					</div>
+					
+					<div class="form-section__form-group">
+						<button class="form-section__form-submit">
+							Đăng ký
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="form-section__footer">
+				<span class="form-section__footer-direction">
+					Bạn đã có tài khoản ?
+					<a href="#" class="form-section__footer-link link-login">
+						Đăng nhập
+					</a>
+				</span>
+			</div>
+		</section>
+	</div>
+
+	<footer class="copyright">
+		<i class="fas fa-code copyright-icon copyright-icon--coding"></i> with by 
+		<i class="fas fa-heart copyright-icon"></i>. Copyright by 
+		<span class="copyright-author">Kiennt</span> &copy; 2021
+	</footer>
+	<script src="./assets/js/base.js"></script>
+	<script src="./assets/js/Validator.js"></script>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
