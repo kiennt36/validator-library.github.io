@@ -3,8 +3,6 @@ const passwordInput = formElement.querySelector('[name=password]')
 const toggleShowPasswordBtn = formElement.querySelector('.form-section__form-group-icon')
 const linkElement = document.querySelector('.form-section__footer-link')
 
-const DOMAIN_NAME = 'file:///D:/hoc_javascript/validator-library.github.io/'
-
 toggleShowPasswordBtn.onclick = () => {
 	if(toggleShowPasswordBtn.classList.contains('hidden')) {
 		toggleShowPasswordBtn.classList.remove('hidden')
