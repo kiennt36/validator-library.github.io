@@ -3,6 +3,8 @@ const passwordInput = formElement.querySelector('[name=password]')
 const toggleShowPasswordBtn = formElement.querySelector('.form-section__form-group-icon')
 const linkElement = document.querySelector('.form-section__footer-link')
 
+const dataUser = JSON.parse(localStorage.getItem('dataUser'))
+
 toggleShowPasswordBtn.onclick = () => {
 	if(toggleShowPasswordBtn.classList.contains('hidden')) {
 		toggleShowPasswordBtn.classList.remove('hidden')
@@ -22,13 +24,17 @@ Validator({
 	rules: [
 		Validator.isRequired('#email', 'Vui lòng nhập email'),
 		Validator.isConfirmed('#email', () => {
-			const emailDataUser = JSON.parse(localStorage.getItem('dataUser')).email || 'admin@gmail.com'
-			return emailDataUser
+			if(dataUser) {
+				return dataUser.email
+			}
+			return 'admin@gmail.com'
 		}, "Email nhập vào không đúng"),
 		Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
 		Validator.isConfirmed('#password', () => {
-			const pwDataUser = JSON.parse(localStorage.getItem('dataUser')).password || 'admin123456'
-			return pwDataUser
+			if(dataUser) {
+				return dataUser.password
+			}
+			return 'admin123456'
 		}, "Mật khẩu nhập không đúng"),
 	],
 	onSubmit: data => {
